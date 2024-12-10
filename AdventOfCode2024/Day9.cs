@@ -1,6 +1,4 @@
-﻿using System.Text;
-
-namespace AdventOfCode2024
+﻿namespace AdventOfCode2024
 {
     internal static class Day9
     {
