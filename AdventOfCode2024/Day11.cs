@@ -75,23 +75,9 @@
             return result;
         }
 
-        private static (int fromIteration, List<long> endValues) LoopCheck(long l)
-        {
-            List<long> input = [l];
-            for (var i = 0; i < 30; i++)
-            {
-                input = Blink(input);
-                if (input.Contains(l))
-                {
-                    return (i, input);
-                }
-            }
-            return (0, []);
-        }
-
         private static List<long> ParseInput()
         {
-            var line = /*"125 17"; // */ File.ReadAllText("day11_part1.txt");
+            var line = File.ReadAllText("day11_part1.txt");
             return line.Split(' ').Select(long.Parse).ToList();
         }
     }
